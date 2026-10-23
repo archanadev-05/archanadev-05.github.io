@@ -61,7 +61,7 @@
         </button>
 
         <!-- Navbar Download CV button -->
-        <a href="assets/docs/Archana_Thanuwana_CV.pdf" download="Archana_Thanuwana_CV.pdf" class="btn btn-cv-accent btn-sm">
+        <a href="assets/docs/Archana_Thanuwana_CV.pdf" download="Archana_Thanuwana_CV.pdf" class="btn btn-cv-accent btn-sm btn-nav-cv" title="Download CV">
           <i class="fa-solid fa-download"></i> <span>Download CV</span>
         </a>
 
@@ -183,8 +183,11 @@
           <div class="about-stats">
             <div class="stat-card">
               <i class="fa-solid fa-code-branch stat-icon"></i>
-              <div class="stat-number">12+</div>
-              <div class="stat-label">GitHub Repositories</div>
+              <div class="stat-number">
+                <span id="stat-repo-count">12+</span>
+                <span class="live-pulse-badge" id="live-stat-badge">Live</span>
+              </div>
+              <div class="stat-label">Public Repositories</div>
             </div>
 
             <div class="stat-card">
@@ -314,13 +317,25 @@
           <button class="filter-btn" data-filter="backend">Backend & APIs</button>
           <button class="filter-btn" data-filter="systems">Systems & IoT</button>
           <button class="filter-btn" data-filter="mobile">Mobile & Web</button>
+          <button class="filter-btn" data-filter="live"><i class="fa-brands fa-github"></i> Live GitHub Feed <span class="live-indicator-dot"></span></button>
+        </div>
+
+        <!-- Live GitHub Sync Status Bar -->
+        <div class="live-sync-bar" id="live-sync-bar">
+          <div class="live-sync-badge">
+            <span class="live-indicator-dot"></span>
+            <span id="live-sync-text">Live Sync with GitHub API</span>
+          </div>
+          <span class="live-sync-note" id="live-sync-time">Connecting to GitHub...</span>
         </div>
 
         <!-- Projects Grid -->
-        <div class="projects-grid">
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamic Live Repos from GitHub will be appended here -->
+          <div id="live-repos-container" style="display: contents;"></div>
 
           <!-- 1. Personal AI Assistant -->
-          <div class="project-card" data-category="ai">
+          <div class="project-card" data-category="ai" data-repo="personal-ai-assistant">
             <div>
               <div class="project-top">
                 <i class="fa-solid fa-robot project-folder-icon"></i>
@@ -347,7 +362,7 @@
           </div>
 
           <!-- 2. Database Copilot Agent -->
-          <div class="project-card" data-category="ai backend">
+          <div class="project-card" data-category="ai backend" data-repo="database-copilot-agent">
             <div>
               <div class="project-top">
                 <i class="fa-solid fa-database project-folder-icon"></i>
@@ -373,7 +388,7 @@
           </div>
 
           <!-- 3. Adaptive RAG -->
-          <div class="project-card" data-category="ai">
+          <div class="project-card" data-category="ai" data-repo="adaptive-rag">
             <div>
               <div class="project-top">
                 <i class="fa-solid fa-magnifying-glass-chart project-folder-icon"></i>
@@ -399,7 +414,7 @@
           </div>
 
           <!-- 4. WhatsApp MCP Server -->
-          <div class="project-card" data-category="backend systems">
+          <div class="project-card" data-category="backend systems" data-repo="whatsapp-mcp-server">
             <div>
               <div class="project-top">
                 <i class="fa-brands fa-whatsapp project-folder-icon"></i>
@@ -425,7 +440,7 @@
           </div>
 
           <!-- 5. Disaster Relief Management System in C -->
-          <div class="project-card" data-category="systems">
+          <div class="project-card" data-category="systems" data-repo="disaster-relief-management-c">
             <div>
               <div class="project-top">
                 <i class="fa-solid fa-hands-holding-circle project-folder-icon"></i>
@@ -451,7 +466,7 @@
           </div>
 
           <!-- 6. Smart Shoe Dryer -->
-          <div class="project-card" data-category="systems">
+          <div class="project-card" data-category="systems" data-repo="smart-shoe-dryer">
             <div>
               <div class="project-top">
                 <i class="fa-solid fa-microchip project-folder-icon"></i>
@@ -477,7 +492,7 @@
           </div>
 
           <!-- 7. Money Management App -->
-          <div class="project-card" data-category="mobile">
+          <div class="project-card" data-category="mobile" data-repo="money_management">
             <div>
               <div class="project-top">
                 <i class="fa-solid fa-wallet project-folder-icon"></i>
@@ -503,7 +518,7 @@
           </div>
 
           <!-- 8. Ames Housing Data Preprocessing -->
-          <div class="project-card" data-category="ai">
+          <div class="project-card" data-category="ai" data-repo="ames-housing-data-preprocessing">
             <div>
               <div class="project-top">
                 <i class="fa-solid fa-chart-pie project-folder-icon"></i>
