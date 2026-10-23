@@ -1,85 +1,111 @@
-# 🚀 Archana Thanuwana - Developer Portfolio & CV
+<div align="center">
 
-A modern, high-performance developer portfolio website designed for **GitHub Pages**, featuring dynamic typing, responsive dark/light mode, project filtering, and an integrated downloadable ATS-friendly CV (PDF & interactive HTML).
+  <h1>🌐 Archana Thanuwana — Developer Portfolio</h1>
+  <p><b>Official Portfolio Website & Curriculum Vitae for Archana Thanuwana</b></p>
+  <p><i>Undergraduate @ University of Moratuwa (Faculty of Information Technology) • AI & Systems Builder</i></p>
 
-🌐 **Live URL Preview**: `https://archanadev-05.github.io`
+  <p>
+    <a href="https://archanadev-05.github.io" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_Live_Site-archanadev--05.github.io-38bdf8?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Website" />
+    </a>
+    <a href="https://archanadev-05.github.io/assets/docs/Archana_Thanuwana_CV.pdf" target="_blank">
+      <img src="https://img.shields.io/badge/📄_Download_CV-PDF-10b981?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download CV" />
+    </a>
+    <a href="https://www.linkedin.com/in/archana-thanuwana" target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-Archana_Thanuwana-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    <a href="https://www.instagram.com/archana.thanu/" target="_blank">
+      <img src="https://img.shields.io/badge/Instagram-@archana.thanu-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+    </a>
+  </p>
+
+</div>
 
 ---
 
-## ✨ Features
+## 📖 Overview
 
-- **⚡ Fast & Zero-Build**: Pure HTML5, CSS3, and modern Vanilla JavaScript — no complicated Node.js build steps needed. Deploys instantly to GitHub Pages.
-- **📄 Downloadable CV & Online Resume**:
-  - Direct 1-click download button for [`Archana_Thanuwana_CV.pdf`](assets/docs/Archana_Thanuwana_CV.pdf).
-  - Web-based printable resume [`resume.html`](resume.html) with clean print styles (`@media print`).
-- **🌓 Dark & Light Mode**: Smooth theme toggling with automatic user system preference detection and `localStorage` persistence.
+This repository hosts the source code for my personal developer portfolio, live on **GitHub Pages** at [**archanadev-05.github.io**](https://archanadev-05.github.io).
+
+It is engineered with a modern, high-contrast dark aesthetic (with light mode toggle), smooth glassmorphism effects, interactive project filtering, and integrated CV access for recruiters and engineering managers.
+
+---
+
+## ✨ Key Features
+
+- **⚡ Zero-Build & High Performance**: Built with pure semantic HTML5, modern CSS3, and vanilla JavaScript. Deploys instantly to GitHub Pages with no npm/Node.js build latency.
+- **📄 Dual-Format Curriculum Vitae**:
+  - **1-Click Download**: High-resolution ATS-optimized PDF CV at [`assets/docs/Archana_Thanuwana_CV.pdf`](assets/docs/Archana_Thanuwana_CV.pdf).
+  - **Interactive Web CV**: Clean printable browser resume at [`resume.html`](resume.html).
+- **🌓 Dynamic Dark / Light Themes**: Automatically respects OS preference (`prefers-color-scheme`) with one-click toggling and `localStorage` persistence.
 - **🎯 Dynamic Interactivity**:
-  - Hero role typing animation highlighting University of Moratuwa education and AI/ML focus.
-  - Interactive project filtering by category (AI & Agents, Backend & APIs, Systems & IoT, Mobile).
-  - One-click copy email button and contact form handler.
-- **📱 Fully Responsive**: Pixel-perfect layout across mobile phones, tablets, laptops, and ultra-wide screens.
-- **🔗 Profile Links**:
-  - **GitHub**: [github.com/archanadev-05](https://github.com/archanadev-05)
-  - **LinkedIn**: [linkedin.com/in/archana-thanuwana](https://www.linkedin.com/in/archana-thanuwana)
-  - **Instagram**: [instagram.com/archana.thanu](https://www.instagram.com/archana.thanu/)
-  - **Email**: `archanathanuwana@gmail.com`
+  - Hero typing animation highlighting University of Moratuwa education and core engineering domains.
+  - Live category filter for featured projects (AI & Agents, Backend & APIs, Systems & IoT, Mobile).
+  - One-click copy email button and direct contact handler.
+- **📱 Ultra Responsive**: Fluid layout meticulously adapted for mobile screens, tablets, laptops, and ultra-wide displays.
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Tech Stack & Architecture
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Markup & Semantics** | HTML5, OpenGraph Protocol, Schema.org metadata |
+| **Styling & Effects** | CSS3 (Custom Variables, Flexbox, CSS Grid, Glassmorphism, Ambient Blobs) |
+| **Logic & State** | Vanilla JavaScript (ES6+), LocalStorage API |
+| **Typography & Icons** | Inter, JetBrains Mono, FontAwesome 6 |
+| **Hosting & CI/CD** | GitHub Pages |
+
+---
+
+## 📂 Repository Structure
 
 ```
-my_portofolio/
-├── index.html                  # Main portfolio landing page
-├── resume.html                 # Dedicated printable / web view CV
-├── README.md                   # Setup and deployment documentation
+.
+├── index.html                  # Main portfolio website landing page
+├── resume.html                 # Dedicated ATS-friendly web/printable CV
+├── README.md                   # Public repository documentation
 ├── css/
-│   └── style.css               # Modern CSS with custom properties & responsive design
+│   └── style.css               # Design system, themes & responsive breakpoints
 ├── js/
-│   └── main.js                 # Theme switcher, filters, typing animation, navigation
+│   └── main.js                 # Theme switcher, typing animation, project filter
 └── assets/
     ├── docs/
-    │   └── Archana_Thanuwana_CV.pdf   # Generated high-resolution downloadable PDF CV
+    │   └── Archana_Thanuwana_CV.pdf   # Downloadable PDF resume
     └── images/
-        ├── profile.jpg         # Profile picture
-        └── cv_preview.png      # Thumbnail preview of the CV
+        ├── profile.jpg         # Profile image
+        └── cv_preview.png      # Document preview thumbnail
 ```
 
 ---
 
-## 🚀 How to Publish to GitHub Pages
+## 💻 Running Locally
 
-### Option 1: As your Main User Site (`archanadev-05.github.io`) — **Recommended**
+No dependencies or package managers are required. You can preview the website using any local web server:
 
-1. Create a new repository on your GitHub named **`archanadev-05.github.io`**:
-   👉 [Create Repository on GitHub](https://github.com/new)
-2. In your terminal inside this folder, run:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Archana Thanuwana Portfolio & CV"
-   git branch -M main
-   git remote add origin https://github.com/archanadev-05/archanadev-05.github.io.git
-   git push -u origin main
-   ```
-3. GitHub Pages will automatically detect the repo and publish it to:
-   👉 **`https://archanadev-05.github.io`** within 1–2 minutes!
+```bash
+# Clone the repository
+git clone https://github.com/archanadev-05/archanadev-05.github.io.git
+cd archanadev-05.github.io
+
+# Start a lightweight Python local server
+python3 -m http.server 8000
+```
+
+Then visit [`http://localhost:8000`](http://localhost:8000) in your browser.
 
 ---
 
-### Option 2: As a Project Site (e.g. `archanadev-05.github.io/portfolio`)
+## 📬 Connect With Me
 
-1. Create a repository named `portfolio` (or `my_portofolio`).
-2. Push your files to `main`.
-3. Go to **Settings** > **Pages** in the repository.
-4. Under **Branch**, select `main` and `/ (root)`, then click **Save**.
-5. Your site will be live at `https://archanadev-05.github.io/portfolio`.
+- **Portfolio**: [archanadev-05.github.io](https://archanadev-05.github.io)
+- **Email**: [archanathanuwana@gmail.com](mailto:archanathanuwana@gmail.com)
+- **LinkedIn**: [linkedin.com/in/archana-thanuwana](https://www.linkedin.com/in/archana-thanuwana)
+- **Instagram**: [instagram.com/archana.thanu](https://www.instagram.com/archana.thanu/)
+- **GitHub**: [github.com/archanadev-05](https://github.com/archanadev-05)
 
 ---
 
-## 🛠️ How to Update Your CV in the Future
-
-1. Open `resume.html` and update any details (new projects, courses, or roles).
-2. To update the downloadable PDF:
-   - Open `resume.html` in Chrome / browser, click the **Print** button (or press `Cmd + P` / `Ctrl + P`), choose **Save as PDF**, and save it as `assets/docs/Archana_Thanuwana_CV.pdf`.
-3. Commit and push the changes to GitHub.
+<p align="center">
+  <i>Designed & Built by Archana Thanuwana • University of Moratuwa (FIT)</i>
+</p>
