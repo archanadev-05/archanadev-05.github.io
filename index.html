@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archana Thanuwana | Software Engineering & AI Portfolio</title>
+  <meta name="description" content="Portfolio of Archana Thanuwana - IT Undergraduate at University of Moratuwa, AI/ML Developer, Full-Stack Engineer, and Systems Builder.">
+  <meta name="author" content="Archana Thanuwana">
+  <meta name="keywords" content="Archana Thanuwana, University of Moratuwa, Software Engineer, Portfolio, AI Developer, LangGraph, Python, Flutter, GitHub Pages">
+
+  <!-- Open Graph / Social Sharing Meta -->
+  <meta property="og:title" content="Archana Thanuwana | Portfolio">
+  <meta property="og:description" content="IT Undergraduate @ UOM FIT | Building things with code, AI agents, full-stack & mobile apps.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://archanadev-05.github.io">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg">
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Background -->
+  <div class="bg-ambient">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <div class="brand-badge">AT</div>
+        <div class="brand-text">archana<span>.dev</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#cv-callout" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Navbar Download CV button -->
+        <a href="assets/docs/Archana_Thanuwana_CV.pdf" download="Archana_Thanuwana_CV.pdf" class="btn btn-cv-accent btn-sm">
+          <i class="fa-solid fa-download"></i> <span>Download CV</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="nav-mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-dot"></span>
+            <span>Available for Internships & Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Archana Thanuwana</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span id="typing-text"></span><span class="typing-cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Undergraduate in Information Technology at the <strong>University of Moratuwa</strong> (FIT). Passionate about crafting intelligent AI agents, modern web & mobile applications, and high-performance software systems.
+          </p>
+
+          <div class="hero-cta">
+            <!-- Download CV Button -->
+            <a href="assets/docs/Archana_Thanuwana_CV.pdf" download="Archana_Thanuwana_CV.pdf" class="btn btn-cv-accent">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download CV (PDF)</span>
+            </a>
+
+            <!-- View Resume Online Button -->
+            <a href="resume.html" class="btn btn-secondary">
+              <i class="fa-solid fa-file-lines"></i>
+              <span>View Resume</span>
+            </a>
+
+            <!-- Contact CTA -->
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://github.com/archanadev-05" target="_blank" rel="noopener noreferrer" class="social-link github" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/archana-thanuwana" target="_blank" rel="noopener noreferrer" class="social-link linkedin" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/archana.thanu/" target="_blank" rel="noopener noreferrer" class="social-link instagram" title="Instagram Profile">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:archanathanuwana@gmail.com" class="social-link" title="Email Archana">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Card Visual -->
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-img-wrap">
+              <img src="assets/images/profile.jpg" alt="Archana Thanuwana" loading="eager">
+              <div class="profile-badge-float">
+                <i class="fa-solid fa-graduation-cap"></i> UOM FIT
+              </div>
+            </div>
+            <div class="profile-meta">
+              <h3>Archana Thanuwana</h3>
+              <p><i class="fa-solid fa-location-dot" style="color: #38bdf8; margin-right: 4px;"></i> Galle, Sri Lanka</p>
+              <div class="profile-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LangGraph</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">C/C++</span>
+                <span class="tech-tag">Go</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity & Code</h2>
+          <p class="section-subtitle">Bridging theoretical computer science with practical, intelligent software solutions.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <p>
+              I am an undergraduate student in Information Technology at the <strong>University of Moratuwa</strong>, Sri Lanka's premier technological institution. My journey revolves around engineering impactful software with an emphasis on clarity, scalability, and innovation.
+            </p>
+            <p>
+              I specialize in developing <strong>autonomous AI agents, Retrieval-Augmented Generation (RAG) pipelines, and intelligent developer tooling</strong>. From integrating LLMs using LangGraph & FastAPI to building embedded controllers and cross-platform Flutter apps, I love tackling challenges across the entire technology stack.
+            </p>
+            <p>
+              When I'm not writing code, you can find me exploring emerging AI architectures, designing intuitive user experiences, or contributing to open-source software.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <i class="fa-solid fa-code-branch stat-icon"></i>
+              <div class="stat-number">12+</div>
+              <div class="stat-label">GitHub Repositories</div>
+            </div>
+
+            <div class="stat-card">
+              <i class="fa-solid fa-graduation-cap stat-icon"></i>
+              <div class="stat-number">UOM</div>
+              <div class="stat-label">Faculty of IT, Sri Lanka</div>
+            </div>
+
+            <div class="stat-card">
+              <i class="fa-solid fa-robot stat-icon"></i>
+              <div class="stat-number">AI & Agentic</div>
+              <div class="stat-label">Specialization & Focus</div>
+            </div>
+
+            <div class="stat-card">
+              <i class="fa-solid fa-bolt stat-icon"></i>
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Dedication to Clean Code</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">The tools, languages, and frameworks I use to bring ideas to life.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- AI & Intelligent Systems -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3 class="category-title">AI & Agentic Systems</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-chip"><i class="fa-solid fa-network-wired"></i> LangGraph</span>
+              <span class="skill-chip"><i class="fa-solid fa-link"></i> LangChain</span>
+              <span class="skill-chip"><i class="fa-solid fa-database"></i> Adaptive RAG</span>
+              <span class="skill-chip"><i class="fa-solid fa-plug"></i> Model Context Protocol (MCP)</span>
+              <span class="skill-chip"><i class="fa-solid fa-shield-halved"></i> Guardrails & Tavily</span>
+              <span class="skill-chip"><i class="fa-solid fa-laptop-code"></i> Streamlit & Gradio</span>
+            </div>
+          </div>
+
+          <!-- Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-chip"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-chip"><i class="fa-solid fa-c"></i> C</span>
+              <span class="skill-chip"><i class="fa-solid fa-code"></i> C++</span>
+              <span class="skill-chip"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="skill-chip"><i class="fa-solid fa-mobile"></i> Dart</span>
+              <span class="skill-chip"><i class="fa-brands fa-golang"></i> Go (Golang)</span>
+              <span class="skill-chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-chip"><i class="fa-brands fa-js-square"></i> TypeScript</span>
+              <span class="skill-chip"><i class="fa-solid fa-database"></i> SQL</span>
+            </div>
+          </div>
+
+          <!-- Frameworks & Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <h3 class="category-title">Frameworks & Mobile</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-chip"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+              <span class="skill-chip"><i class="fa-solid fa-table"></i> SQLAlchemy ORM</span>
+              <span class="skill-chip"><i class="fa-brands fa-flutter"></i> Flutter Mobile</span>
+              <span class="skill-chip"><i class="fa-brands fa-angular"></i> Angular</span>
+              <span class="skill-chip"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
+              <span class="skill-chip"><i class="fa-solid fa-chart-line"></i> Pandas & NumPy</span>
+            </div>
+          </div>
+
+          <!-- Tools & DevOps -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <h3 class="category-title">Databases, Tools & IoT</h3>
+            </div>
+            <div class="skill-items">
+              <span class="skill-chip"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="skill-chip"><i class="fa-solid fa-database"></i> SQLite</span>
+              <span class="skill-chip"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="skill-chip"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="skill-chip"><i class="fa-brands fa-linux"></i> Linux / Unix</span>
+              <span class="skill-chip"><i class="fa-solid fa-microchip"></i> Microcontrollers / IoT</span>
+              <span class="skill-chip"><i class="fa-solid fa-code"></i> VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects & Systems</h2>
+          <p class="section-subtitle">Real-world applications, agent architectures, and open-source software.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI & Agents</button>
+          <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+          <button class="filter-btn" data-filter="systems">Systems & IoT</button>
+          <button class="filter-btn" data-filter="mobile">Mobile & Web</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- 1. Personal AI Assistant -->
+          <div class="project-card" data-category="ai">
+            <div>
+              <div class="project-top">
+                <i class="fa-solid fa-robot project-folder-icon"></i>
+                <div class="project-links">
+                  <a href="https://github.com/archanadev-05/personal-ai-assistant" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/archanadev-05/personal-ai-assistant" target="_blank">Personal AI Assistant (Multi-Agent)</a>
+              </h3>
+              <p class="project-desc">
+                Autonomous multi-agent system built with LangGraph & LangChain. Dynamically routes queries to specialized news, scam-detection, and conversational agents, complete with Tavily search, input guardrails, and Gradio UI.
+              </p>
+            </div>
+            <ul class="project-tech-list">
+              <li class="project-tech-item">LangGraph</li>
+              <li class="project-tech-item">LangChain</li>
+              <li class="project-tech-item">Tavily</li>
+              <li class="project-tech-item">Gradio</li>
+              <li class="project-tech-item">Python</li>
+            </ul>
+          </div>
+
+          <!-- 2. Database Copilot Agent -->
+          <div class="project-card" data-category="ai backend">
+            <div>
+              <div class="project-top">
+                <i class="fa-solid fa-database project-folder-icon"></i>
+                <div class="project-links">
+                  <a href="https://github.com/archanadev-05/database-copilot-agent" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/archanadev-05/database-copilot-agent" target="_blank">Database Copilot Agent</a>
+              </h3>
+              <p class="project-desc">
+                Intelligent database agent built with FastAPI and SQLAlchemy ORM. Enables natural language interactions with PostgreSQL databases using LLM-powered schema reasoning and automated safe SQL generation.
+              </p>
+            </div>
+            <ul class="project-tech-list">
+              <li class="project-tech-item">FastAPI</li>
+              <li class="project-tech-item">PostgreSQL</li>
+              <li class="project-tech-item">SQLAlchemy</li>
+              <li class="project-tech-item">LLM Agents</li>
+            </ul>
+          </div>
+
+          <!-- 3. Adaptive RAG -->
+          <div class="project-card" data-category="ai">
+            <div>
+              <div class="project-top">
+                <i class="fa-solid fa-magnifying-glass-chart project-folder-icon"></i>
+                <div class="project-links">
+                  <a href="https://github.com/archanadev-05/adaptive-rag" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/archanadev-05/adaptive-rag" target="_blank">Adaptive RAG System</a>
+              </h3>
+              <p class="project-desc">
+                Next-generation Retrieval-Augmented Generation architecture with query analysis, self-corrective retrieval routing, and relevance grading to minimize hallucinations in complex knowledge domains.
+              </p>
+            </div>
+            <ul class="project-tech-list">
+              <li class="project-tech-item">Python</li>
+              <li class="project-tech-item">Vector Search</li>
+              <li class="project-tech-item">RAG</li>
+              <li class="project-tech-item">LLM</li>
+            </ul>
+          </div>
+
+          <!-- 4. WhatsApp MCP Server -->
+          <div class="project-card" data-category="backend systems">
+            <div>
+              <div class="project-top">
+                <i class="fa-brands fa-whatsapp project-folder-icon"></i>
+                <div class="project-links">
+                  <a href="https://github.com/archanadev-05/whatsapp-mcp-server" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/archanadev-05/whatsapp-mcp-server" target="_blank">WhatsApp MCP Server</a>
+              </h3>
+              <p class="project-desc">
+                Model Context Protocol (MCP) server implemented in Go. Connects WhatsApp messaging APIs directly with MCP-compatible LLM applications, offering structured tools for messaging and notifications.
+              </p>
+            </div>
+            <ul class="project-tech-list">
+              <li class="project-tech-item">Go (Golang)</li>
+              <li class="project-tech-item">MCP</li>
+              <li class="project-tech-item">REST APIs</li>
+              <li class="project-tech-item">Tool Calling</li>
+            </ul>
+          </div>
+
+          <!-- 5. Disaster Relief Management System in C -->
+          <div class="project-card" data-category="systems">
+            <div>
+              <div class="project-top">
+                <i class="fa-solid fa-hands-holding-circle project-folder-icon"></i>
+                <div class="project-links">
+                  <a href="https://github.com/archanadev-05/disaster-relief-management-c" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/archanadev-05/disaster-relief-management-c" target="_blank">Disaster Relief Management System</a>
+              </h3>
+              <p class="project-desc">
+                Modular console C application simulating Sri Lanka DMC emergency operations. Features 5 integrated subsystems managing victim registries, inventory, relief camps, and aid distribution with persistent binary file I/O.
+              </p>
+            </div>
+            <ul class="project-tech-list">
+              <li class="project-tech-item">C Language</li>
+              <li class="project-tech-item">Binary File I/O</li>
+              <li class="project-tech-item">Data Structures</li>
+              <li class="project-tech-item">Modular Design</li>
+            </ul>
+          </div>
+
+          <!-- 6. Smart Shoe Dryer -->
+          <div class="project-card" data-category="systems">
+            <div>
+              <div class="project-top">
+                <i class="fa-solid fa-microchip project-folder-icon"></i>
+                <div class="project-links">
+                  <a href="https://github.com/archanadev-05/smart-shoe-dryer" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/archanadev-05/smart-shoe-dryer" target="_blank">Smart Shoe Dryer Controller</a>
+              </h3>
+              <p class="project-desc">
+                Microcontroller embedded system in C++ enabling custom duration motor control via a matrix keypad, real-time LCD countdown display, and servo/LED feedback indicators for drying automation.
+              </p>
+            </div>
+            <ul class="project-tech-list">
+              <li class="project-tech-item">C++</li>
+              <li class="project-tech-item">Embedded Systems</li>
+              <li class="project-tech-item">LCD & Keypad</li>
+              <li class="project-tech-item">Hardware</li>
+            </ul>
+          </div>
+
+          <!-- 7. Money Management App -->
+          <div class="project-card" data-category="mobile">
+            <div>
+              <div class="project-top">
+                <i class="fa-solid fa-wallet project-folder-icon"></i>
+                <div class="project-links">
+                  <a href="https://github.com/archanadev-05/money_management" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/archanadev-05/money_management" target="_blank">Money Management Mobile App</a>
+              </h3>
+              <p class="project-desc">
+                Intuitive cross-platform personal finance mobile application developed with Flutter and Dart for expense tracking, budget categorization, and daily financial records.
+              </p>
+            </div>
+            <ul class="project-tech-list">
+              <li class="project-tech-item">Flutter</li>
+              <li class="project-tech-item">Dart</li>
+              <li class="project-tech-item">State Management</li>
+              <li class="project-tech-item">Mobile UX</li>
+            </ul>
+          </div>
+
+          <!-- 8. Ames Housing Data Preprocessing -->
+          <div class="project-card" data-category="ai">
+            <div>
+              <div class="project-top">
+                <i class="fa-solid fa-chart-pie project-folder-icon"></i>
+                <div class="project-links">
+                  <a href="https://github.com/archanadev-05/ames-housing-data-preprocessing" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source Code">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">
+                <a href="https://github.com/archanadev-05/ames-housing-data-preprocessing" target="_blank">Ames Housing Data Pipeline</a>
+              </h3>
+              <p class="project-desc">
+                Comprehensive Exploratory Data Analysis (EDA) and data cleansing pipeline for residential real estate pricing, handling missing values, feature engineering, and statistical outlier treatment.
+              </p>
+            </div>
+            <ul class="project-tech-list">
+              <li class="project-tech-item">Python</li>
+              <li class="project-tech-item">Pandas</li>
+              <li class="project-tech-item">Jupyter Notebook</li>
+              <li class="project-tech-item">EDA</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="https://github.com/archanadev-05?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fa-brands fa-github"></i>
+            <span>Explore All 12+ Repositories on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEDICATED CV CALLOUT SECTION -->
+    <section class="cv-callout" id="cv-callout">
+      <div class="container">
+        <div class="cv-banner">
+          <div class="cv-banner-content">
+            <span class="section-tag" style="color: #38bdf8;">Curriculum Vitae</span>
+            <h3>Looking for an AI / Software Engineer Intern?</h3>
+            <p>
+              Download my official CV outlining my academic background at the University of Moratuwa, multi-agent AI research, full-stack competencies, and open-source contributions.
+            </p>
+
+            <ul class="cv-features-list">
+              <li class="cv-feature-item"><i class="fa-solid fa-circle-check"></i> UOM FIT IT Undergraduate</li>
+              <li class="cv-feature-item"><i class="fa-solid fa-circle-check"></i> LangGraph & RAG Architectures</li>
+              <li class="cv-feature-item"><i class="fa-solid fa-circle-check"></i> Python, FastAPI, C/C++, Flutter</li>
+              <li class="cv-feature-item"><i class="fa-solid fa-circle-check"></i> ATS-Friendly Structured Format</li>
+            </ul>
+
+            <div class="cv-banner-actions">
+              <!-- Download CV Button -->
+              <a href="assets/docs/Archana_Thanuwana_CV.pdf" download="Archana_Thanuwana_CV.pdf" class="btn btn-cv-accent">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Download CV (PDF)</span>
+              </a>
+              <!-- View Resume in browser -->
+              <a href="resume.html" class="btn btn-secondary">
+                <i class="fa-solid fa-eye"></i>
+                <span>View Online</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="cv-preview-card">
+            <img src="assets/images/cv_preview.png" alt="Archana Thanuwana CV Preview" class="cv-preview-img">
+            <div class="cv-preview-overlay">
+              <a href="assets/docs/Archana_Thanuwana_CV.pdf" download="Archana_Thanuwana_CV.pdf" class="btn btn-cv-accent btn-sm">
+                <i class="fa-solid fa-download"></i> Download
+              </a>
+              <a href="resume.html" class="btn btn-secondary btn-sm">
+                <i class="fa-solid fa-eye"></i> Preview
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Whether you have an internship opportunity, project collaboration, or just want to say hi!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Direct Links -->
+          <div class="contact-info-list">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/archana.thanu/" target="_blank" rel="noopener noreferrer" class="contact-item insta">
+              <div class="contact-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="contact-meta">
+                <h4>Instagram</h4>
+                <p>@archana.thanu</p>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/archana-thanuwana" target="_blank" rel="noopener noreferrer" class="contact-item linkedin">
+              <div class="contact-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-meta">
+                <h4>LinkedIn</h4>
+                <p>linkedin.com/in/archana-thanuwana</p>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/archanadev-05" target="_blank" rel="noopener noreferrer" class="contact-item github">
+              <div class="contact-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-meta">
+                <h4>GitHub</h4>
+                <p>github.com/archanadev-05</p>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <div class="contact-item" style="cursor: default;">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-meta" style="flex: 1;">
+                <h4>Email Address</h4>
+                <p>archanathanuwana@gmail.com</p>
+              </div>
+              <button id="copy-email-btn" class="btn btn-secondary btn-sm" type="button" style="padding: 6px 12px; font-size: 12px;">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-wrap">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" class="form-control" placeholder="jane@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control" placeholder="Internship / Collaboration / Hello">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+
+              <div id="form-status" style="display: none; margin-top: 14px; text-align: center; font-size: 14px; font-weight: 500;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-copy">
+        &copy; 2026 Archana Thanuwana. Hosted with <i class="fa-solid fa-heart" style="color: #ef4444;"></i> on <a href="https://pages.github.com" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">GitHub Pages</a>.
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/archanadev-05" target="_blank" class="footer-link"><i class="fa-brands fa-github"></i> GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/archana-thanuwana" target="_blank" class="footer-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/archana.thanu/" target="_blank" class="footer-link"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        <li><a href="assets/docs/Archana_Thanuwana_CV.pdf" download="Archana_Thanuwana_CV.pdf" class="footer-link"><i class="fa-solid fa-download"></i> CV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
